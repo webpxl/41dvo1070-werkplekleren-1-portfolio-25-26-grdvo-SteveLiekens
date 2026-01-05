@@ -1,15 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Liekens | Digital Designer</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Bootstrap (optioneel, enkel grid) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-<p>Steve Liekens</p>
 
+<body>
+<header class="site-header">
+    <nav class="nav container">
+        <h2 class="logo">Steve.</h2>
+        <ul class="nav-links">
+            <li><a href="#over-mij">Over mij</a></li>
+            <li><a href="#projecten">Projecten</a></li>
+            <li><a href="#extra">Extra</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- OVER MIJ -->
+    <section id="over-mij" class="container about">
+        <div class="about-text">
+            <h1>Hallo, ik ben <span>Steve</span></h1>
+            <p>
+                Ik ben Steve Liekens, een 18-jarige student Digitale Vormgeving aan Hogeschool PXL.
+                Creativiteit staat centraal in alles wat ik doe. Ik hou ervan om ideeën om te zetten
+                naar sterke visuele concepten en mezelf voortdurend te blijven ontwikkelen als ontwerper.
+            </p>
+
+            <p>
+                Naast design ben ik bezig met fotografie, fashion en muziekproductie.
+                Ik schrijf songteksten, speel gitaar en werk regelmatig met Adobe Lightroom.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="images/steve.jpg" alt="Portret van Steve Liekens">
+        </div>
+    </section>
+
+    <!-- PROJECTEN -->
+    <section id="projecten" class="container projects">
+        <h2>Mijn Projecten</h2>
+
+        <div class="project-grid">
+            <article class="project-card">
+                <h3>Project Titel</h3>
+                <p>Korte beschrijving van je project.</p>
+            </article>
+
+            <article class="project-card">
+                <h3>Project Titel</h3>
+                <p>Korte beschrijving van je project.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- EXTRA -->
+    <section id="extra" class="container extra">
+        <h2>Iets speciaals</h2>
+        <p>Hier kan je iets persoonlijks of experimenteels tonen.</p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 – Steve Liekens</p>
+    <a href="privacy.txt">Privacyverklaring</a>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

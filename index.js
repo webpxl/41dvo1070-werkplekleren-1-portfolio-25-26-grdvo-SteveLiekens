@@ -9,6 +9,15 @@ window.addEventListener("scroll", () => {
     }
 })
 
+// --- NIEUW: Spotlight effect met muisbeweging ---
+document.addEventListener('mousemove', (e) => {
+    // Werkt de CSS variabelen --mouse-x en --mouse-y bij
+    document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+    document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+});
+// --- EINDE NIEUW ---
+
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {

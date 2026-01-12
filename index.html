@@ -3,78 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve Liekens | Digital Designer</title>
-
-    <!-- CSS -->
+    <title>Steve Liekens - Digital Designer Portfolio</title>
     <link rel="stylesheet" href="index.css">
-
-    <!-- Bootstrap (optioneel, enkel grid) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-<header class="site-header">
-    <nav class="nav container">
-        <h2 class="logo">Steve.</h2>
-        <ul class="nav-links">
-            <li><a href="#over-mij">Over mij</a></li>
-            <li><a href="#projecten">Projecten</a></li>
-            <li><a href="#extra">Extra</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="container">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-primary">SL</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
 
 <main>
-    <!-- OVER MIJ -->
-    <section id="over-mij" class="container about">
-        <div class="about-text">
-            <h1>Hallo, ik ben <span>Steve</span></h1>
-            <p>
-                Ik ben Steve Liekens, een 18-jarige student Digitale Vormgeving aan Hogeschool PXL.
-                Creativiteit staat centraal in alles wat ik doe. Ik hou ervan om ideeën om te zetten
-                naar sterke visuele concepten en mezelf voortdurend te blijven ontwikkelen als ontwerper.
-            </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="grid-background"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <div class="badge">Digital Designer</div>
+                    <h1 class="hero-title">Steve Liekens</h1>
+                    <p class="hero-text">
+                        18-jarige student <span class="text-primary">Digitale Vormgeving</span> aan Hogeschool PXL.
+                        Gepassioneerd over creativiteit, design en het verkennen van nieuwe concepten.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">Meer over mij</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
 
-            <p>
-                Naast design ben ik bezig met fotografie, fashion en muziekproductie.
-                Ik schrijf songteksten, speel gitaar en werk regelmatig met Adobe Lightroom.
-            </p>
+                <!-- Right Image -->
+                <div class="hero-image">
+                    <div class="image-bg"></div>
+                    <div class="image-container">
+                        <img src="../Steve/IMG_E8279.jpg"
+                             height="5935" width="3957"/>alt="Steve Liekens">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="about-image">
-            <img src="images/steve.jpg" alt="Portret van Steve Liekens">
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- PROJECTEN -->
-    <section id="projecten" class="container projects">
-        <h2>Mijn Projecten</h2>
-
-        <div class="project-grid">
-            <article class="project-card">
-                <h3>Project Titel</h3>
-                <p>Korte beschrijving van je project.</p>
-            </article>
-
-            <article class="project-card">
-                <h3>Project Titel</h3>
-                <p>Korte beschrijving van je project.</p>
-            </article>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-content">
+                <span class="section-label">01 / ABOUT</span>
+                <h2 class="section-title">Creativiteit is mijn drijfveer</h2>
+                <div class="about-text">
+                    <p>
+                        Mijn naam is <strong>Steve Liekens</strong> en ik ben een 18-jarige
+                        student aan Hogeschool PXL, waar ik de opleiding Digitale Vormgeving volg. Creativiteit speelt
+                        een grote
+                        rol in mijn leven; ik ben gepassioneerd over design en wil mezelf verder ontwikkelen als
+                        ontwerper.
+                    </p>
+                    <p>
+                        Het ontdekken van nieuwe ideeën en het experimenteren met creatieve concepten geeft mij energie.
+                        Ik geloof
+                        dat design meer is dan alleen esthetiek—het gaat om het vertellen van verhalen en het creëren
+                        van
+                        betekenisvolle ervaringen.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- EXTRA -->
-    <section id="extra" class="container extra">
-        <h2>Iets speciaals</h2>
-        <p>Hier kan je iets persoonlijks of experimenteels tonen.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-content">
+                <span class="section-label">02 / SKILLS & INTERESTS</span>
+                <h2 class="section-title">Mijn interesses en vaardigheden</h2>
+
+                <div class="skills-grid">
+                    <!-- Fotografie -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                                <circle cx="12" cy="13" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Fotografie</h3>
+                            <p>Passie voor visueel verhalen vertellen en compositie</p>
+                        </div>
+                    </div>
+
+                    <!-- Muziekproductie -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <path d="M9 18V5l12-2v13"></path>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <circle cx="18" cy="16" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Muziekproductie</h3>
+                            <p>Songteksten schrijven en gitaar spelen (elektrisch & akoestisch)</p>
+                        </div>
+                    </div>
+
+                    <!-- Adobe Lightroom -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <circle cx="13.5" cy="6.5" r=".5"></circle>
+                                <circle cx="17.5" cy="10.5" r=".5"></circle>
+                                <circle cx="8.5" cy="7.5" r=".5"></circle>
+                                <circle cx="6.5" cy="12.5" r=".5"></circle>
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Adobe Lightroom</h3>
+                            <p>Fotobewerking en het ontwikkelen van editing skills</p>
+                        </div>
+                    </div>
+
+                    <!-- Digitale Vormgeving -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Digitale Vormgeving</h3>
+                            <p>Design principes en creatieve conceptontwikkeling</p>
+                        </div>
+                    </div>
+
+                    <!-- Fashion -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Fashion</h3>
+                            <p>Interesse in mode en visuele trends</p>
+                        </div>
+                    </div>
+
+                    <!-- Karate -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                                <path d="M5 3v4"></path>
+                                <path d="M19 17v4"></path>
+                                <path d="M3 5h4"></path>
+                                <path d="M17 19h4"></path>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Karate</h3>
+                            <p>Discipline en focus door martial arts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-footer">
+                    <p>
+                        Naast mijn studie ben ik actief bezig met verschillende hobby's die mijn creatieve kant
+                        versterken. Ik
+                        schrijf eigen songteksten, speel gitaar, en werk graag met fotobewerking. Elke dag probeer ik
+                        mezelf te
+                        ontwikkelen als ontwerper en creatief denker.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-content">
+                <span class="section-label">03 / CONTACT</span>
+                <h2 class="section-title">Laten we samenwerken</h2>
+                <p class="contact-text">
+                    Geïnteresseerd in samenwerken of meer weten over mijn werk? Neem gerust contact met me op!
+                </p>
+                <a href="mailto:steve.liekens@student.pxl.be" class="btn btn-primary">Stuur een bericht</a>
+            </div>
+        </div>
     </section>
 </main>
 
-<footer class="site-footer">
-    <p>&copy; 2026 – Steve Liekens</p>
-    <a href="privacy.txt">Privacyverklaring</a>
-</footer>
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -273,6 +273,7 @@ body {
 .about {
     padding: var(--section-padding);
     background: linear-gradient(to bottom, transparent, rgba(23, 23, 23, 0.4), transparent);
+
 }
 
 .section-label {
@@ -386,4 +387,40 @@ html {
 ::selection {
     background: var(--color-primary);
     color: var(--color-primary-foreground);
+}
+
+.main-footer {
+    padding: 40px 0;
+    background-color: #1a1a1a; /* Donkere achtergrond */
+    color: #ffffff;
+    border-top: 1px solid #333;
+    margin-top: 100px; /* Ruimte tussen je laatste sectie en de footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Zet tekst links en link rechts */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Zorg dat het op mobiel ook goed staat */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }

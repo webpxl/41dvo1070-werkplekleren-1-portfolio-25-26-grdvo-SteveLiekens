@@ -424,3 +424,29 @@ html {
         text-align: center;
     }
 }
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--color-muted);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-foreground);
+}
+
+.nav-links a.active {
+    color: var(--color-primary);
+}

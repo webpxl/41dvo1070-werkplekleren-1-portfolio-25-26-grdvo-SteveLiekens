@@ -498,3 +498,60 @@ html {
     border-color: var(--color-primary);
     background: rgba(119, 196, 209, 0.05);
 }
+
+/* Skills Cards – cleaner & rustiger */
+.skills-grid {
+    display: grid;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+.skill-card {
+    padding: 3rem;
+    background: var(--color-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 1.5rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 25px 50px -20px rgba(0, 0, 0, 0.6);
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-primary);
+    background: rgba(119, 196, 209, 0.05);
+}
+
+.skill-card h3 {
+    font-size: 1.35rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--color-foreground);
+}
+
+.skill-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-muted);
+}
+
+.skill-card p + p {
+    margin-top: 1rem;
+}
+
+.skill-card p:first-of-type {
+    color: var(--color-foreground);
+}
